@@ -1,0 +1,16 @@
+D:\Amit\Repositories\RelativityAssessment\Relativity.Console\bin\Debug\Relativity.Console.exe.config
+D:\Amit\Repositories\RelativityAssessment\Relativity.Console\bin\Debug\Relativity.Console.exe
+D:\Amit\Repositories\RelativityAssessment\Relativity.Console\bin\Debug\Relativity.Console.pdb
+D:\Amit\Repositories\RelativityAssessment\Relativity.Console\bin\Debug\kCura.Agent.dll
+D:\Amit\Repositories\RelativityAssessment\Relativity.Console\bin\Debug\kCura.EventHandler.dll
+D:\Amit\Repositories\RelativityAssessment\Relativity.Console\bin\Debug\Relativity.API.dll
+D:\Amit\Repositories\RelativityAssessment\Relativity.Console\bin\Debug\Newtonsoft.Json.dll
+D:\Amit\Repositories\RelativityAssessment\Relativity.Console\bin\Debug\kCura.Agent.xml
+D:\Amit\Repositories\RelativityAssessment\Relativity.Console\bin\Debug\kCura.EventHandler.xml
+D:\Amit\Repositories\RelativityAssessment\Relativity.Console\bin\Debug\Relativity.API.xml
+D:\Amit\Repositories\RelativityAssessment\Relativity.Console\obj\Debug\Relativity.Console.csproj.AssemblyReference.cache
+D:\Amit\Repositories\RelativityAssessment\Relativity.Console\obj\Debug\Relativity.Console.csproj.CoreCompileInputs.cache
+D:\Amit\Repositories\RelativityAssessment\Relativity.Console\obj\Debug\Relativi.0D4F9EAC.Up2Date
+D:\Amit\Repositories\RelativityAssessment\Relativity.Console\obj\Debug\Relativity.Console.exe
+D:\Amit\Repositories\RelativityAssessment\Relativity.Console\obj\Debug\Relativity.Console.pdb
+D:\Amit\Repositories\RelativityAssessment\Relativity.Console\obj\Debug\Relativity.Console.exe.config

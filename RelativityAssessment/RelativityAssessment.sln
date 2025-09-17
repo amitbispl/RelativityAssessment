@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agent", "Agent\Agent.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventHandlers", "..\EventHandlers\EventHandlers.csproj", "{5EF5A2E8-D939-4BD7-BC71-D85E8ABF7E4A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RelativityApp", "..\RelativityApp\RelativityApp.csproj", "{F3228050-E547-4122-BBAA-EB03E7EA3BD3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Relativity.Console", "..\Relativity.Console\Relativity.Console.csproj", "{B9AF51C9-F980-4766-AF68-3CD56D45D429}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,8 +31,19 @@ Global
 		{5EF5A2E8-D939-4BD7-BC71-D85E8ABF7E4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5EF5A2E8-D939-4BD7-BC71-D85E8ABF7E4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5EF5A2E8-D939-4BD7-BC71-D85E8ABF7E4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3228050-E547-4122-BBAA-EB03E7EA3BD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3228050-E547-4122-BBAA-EB03E7EA3BD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3228050-E547-4122-BBAA-EB03E7EA3BD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3228050-E547-4122-BBAA-EB03E7EA3BD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9AF51C9-F980-4766-AF68-3CD56D45D429}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9AF51C9-F980-4766-AF68-3CD56D45D429}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9AF51C9-F980-4766-AF68-3CD56D45D429}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9AF51C9-F980-4766-AF68-3CD56D45D429}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {35A2E950-2B59-4F21-AE2D-607DFDB6F2EC}
 	EndGlobalSection
 EndGlobal

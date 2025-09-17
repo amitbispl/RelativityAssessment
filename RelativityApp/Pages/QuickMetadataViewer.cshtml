@@ -1,0 +1,24 @@
+﻿@page "/QuickMetadataViewer"
+@using System.Net.Http.Json
+@model QuickMetadataViewerModel
+
+<h2>Quick Metadata Viewer</h2>
+
+<form method="post">
+    <label>Document ID:</label>
+    <input asp-for="DocumentId" />
+    <button type="submit">Fetch Document</button>
+</form>
+
+@if (Model.DocumentMetadata != null)
+{
+    <div>
+        <p><b>Control Number:</b> @Model.DocumentMetadata.ControlNumber</p>
+        <p><b>Document Name:</b> @Model.DocumentMetadata.DocumentName</p>
+        <p><b>Custodian:</b> @Model.DocumentMetadata.Custodian</p>
+    </div>
+}
+@if (!string.IsNullOrEmpty(Model.ErrorMessage))
+{
+    <div style="color:red">@Model.ErrorMessage</div>
+}

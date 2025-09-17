@@ -8,8 +8,8 @@ public class FakeLogFactory : ILogFactory
 
 public class FakeLogger : IAPILog
 {
-    public void LogInformation(string message, params object[] args) => Console.WriteLine("INFO: " + string.Format(message, args));
-    public void LogError(Exception ex, string message, params object[] args) => Console.WriteLine("ERROR: " + string.Format(message, args) + " Exception: " + ex);
+    public void LogInformation(string message, params object[] args) => Console.WriteLine("[INFO] " + string.Format(message, args));
+    public void LogError(Exception ex, string message, params object[] args) => Console.WriteLine("[ERROR] " + string.Format(message, args) + " Exception: " + ex.Message);
 
     public void LogVerbose(string messageTemplate, params object[] propertyValues)
     {
@@ -31,11 +31,6 @@ public class FakeLogger : IAPILog
         throw new NotImplementedException();
     }
 
-    public void LogInformation(Exception exception, string messageTemplate, params object[] propertyValues)
-    {
-        throw new NotImplementedException();
-    }
-
     public void LogWarning(string messageTemplate, params object[] propertyValues)
     {
         throw new NotImplementedException();
@@ -48,7 +43,7 @@ public class FakeLogger : IAPILog
 
     public void LogError(string messageTemplate, params object[] propertyValues)
     {
-        throw new NotImplementedException();
+        Console.WriteLine("[ERROR] " + string.Format(messageTemplate, propertyValues) + " Exception: " + ex.Message);
     }
 
     public void LogFatal(string messageTemplate, params object[] propertyValues)
@@ -77,6 +72,11 @@ public class FakeLogger : IAPILog
     }
 
     public IDisposable LogContextPushProperty(string propertyName, object obj)
+    {
+        throw new NotImplementedException();
+    }
+
+    public void LogInformation(Exception exception, string messageTemplate, params object[] propertyValues)
     {
         throw new NotImplementedException();
     }

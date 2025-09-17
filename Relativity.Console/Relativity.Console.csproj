@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B9AF51C9-F980-4766-AF68-3CD56D45D429}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Relativity.Console</RootNamespace>
+    <AssemblyName>Relativity.Console</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="kCura.Agent">
+      <HintPath>..\RelativityAssessment\Agent\bin\Debug\kCura.Agent.dll</HintPath>
+    </Reference>
+    <Reference Include="kCura.EventHandler, Version=17.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\RelativityAssessment\packages\Relativity.EventHandler.17.0.2\lib\net462\kCura.EventHandler.dll</HintPath>
+    </Reference>
+    <Reference Include="Relativity.API, Version=17.0.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\RelativityAssessment\packages\Relativity.API.17.0.4\lib\net462\Relativity.API.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DocumentLoggerAgent.cs" />
+    <Compile Include="DocumentLoggerAgentLocal.cs" />
+    <Compile Include="Events\ConfidentialityValidationPreSave.cs" />
+    <Compile Include="FakeDBContext.cs" />
+    <Compile Include="FakeHelper.cs" />
+    <Compile Include="FakeLoggerFactory.cs" />
+    <Compile Include="Fake\ILoggerFactory.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

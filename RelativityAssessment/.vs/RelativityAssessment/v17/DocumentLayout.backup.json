@@ -1,29 +1,43 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Project\\RelativityAssessment\\",
+  "WorkspaceRootPath": "D:\\Amit\\Repositories\\RelativityAssessment\\RelativityAssessment\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{945C74D1-B1EE-4CE2-B5CC-DACF2EAE47A8}|Agent\\Agent.csproj|e:\\project\\relativityassessment\\agent\\documentloggeragentlocal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{945C74D1-B1EE-4CE2-B5CC-DACF2EAE47A8}|Agent\\Agent.csproj|solutionrelative:agent\\documentloggeragentlocal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B9AF51C9-F980-4766-AF68-3CD56D45D429}|..\\Relativity.Console\\Relativity.Console.csproj|d:\\amit\\repositories\\relativityassessment\\relativity.console\\events\\confidentialityvalidationpresave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{945C74D1-B1EE-4CE2-B5CC-DACF2EAE47A8}|Agent\\Agent.csproj|e:\\project\\relativityassessment\\agent\\documentlogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{945C74D1-B1EE-4CE2-B5CC-DACF2EAE47A8}|Agent\\Agent.csproj|solutionrelative:agent\\documentlogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B9AF51C9-F980-4766-AF68-3CD56D45D429}|..\\Relativity.Console\\Relativity.Console.csproj|d:\\amit\\repositories\\relativityassessment\\relativity.console\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{945C74D1-B1EE-4CE2-B5CC-DACF2EAE47A8}|Agent\\Agent.csproj|e:\\project\\relativityassessment\\agent\\fakehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{945C74D1-B1EE-4CE2-B5CC-DACF2EAE47A8}|Agent\\Agent.csproj|solutionrelative:agent\\fakehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B9AF51C9-F980-4766-AF68-3CD56D45D429}|..\\Relativity.Console\\Relativity.Console.csproj|d:\\amit\\repositories\\relativityassessment\\relativity.console\\documentloggeragent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{945C74D1-B1EE-4CE2-B5CC-DACF2EAE47A8}|Agent\\Agent.csproj|e:\\project\\relativityassessment\\agent\\fakedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{945C74D1-B1EE-4CE2-B5CC-DACF2EAE47A8}|Agent\\Agent.csproj|solutionrelative:agent\\fakedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B9AF51C9-F980-4766-AF68-3CD56D45D429}|..\\Relativity.Console\\Relativity.Console.csproj|d:\\amit\\repositories\\relativityassessment\\relativity.console\\documentloggeragentlocal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{945C74D1-B1EE-4CE2-B5CC-DACF2EAE47A8}|Agent\\Agent.csproj|e:\\project\\relativityassessment\\agent\\fakelogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{945C74D1-B1EE-4CE2-B5CC-DACF2EAE47A8}|Agent\\Agent.csproj|solutionrelative:agent\\fakelogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B9AF51C9-F980-4766-AF68-3CD56D45D429}|..\\Relativity.Console\\Relativity.Console.csproj|d:\\amit\\repositories\\relativityassessment\\relativity.console\\fakehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5EF5A2E8-D939-4BD7-BC71-D85E8ABF7E4A}|..\\EventHandlers\\EventHandlers.csproj|e:\\project\\eventhandlers\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B9AF51C9-F980-4766-AF68-3CD56D45D429}|..\\Relativity.Console\\Relativity.Console.csproj|d:\\amit\\repositories\\relativityassessment\\relativity.console\\fakedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9AF51C9-F980-4766-AF68-3CD56D45D429}|..\\Relativity.Console\\Relativity.Console.csproj|d:\\amit\\repositories\\relativityassessment\\relativity.console\\fakeloggerfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9AF51C9-F980-4766-AF68-3CD56D45D429}|..\\Relativity.Console\\Relativity.Console.csproj|d:\\amit\\repositories\\relativityassessment\\relativity.console\\fake\\iloggerfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3228050-E547-4122-BBAA-EB03E7EA3BD3}|..\\RelativityApp\\RelativityApp.csproj|d:\\amit\\repositories\\relativityassessment\\relativityapp\\pages\\quickmetadataviewer.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3228050-E547-4122-BBAA-EB03E7EA3BD3}|..\\RelativityApp\\RelativityApp.csproj|d:\\amit\\repositories\\relativityassessment\\relativityapp\\pages\\quickmetadataviewer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6834E31A-2840-4E04-AF72-453C25B6B592}|RelativityAssessment.csproj|d:\\amit\\repositories\\relativityassessment\\relativityassessment\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6834E31A-2840-4E04-AF72-453C25B6B592}|RelativityAssessment.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Project\\EventHandlers\\Class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -33,24 +47,19 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 7,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DocumentLoggerAgentLocal.cs",
-              "DocumentMoniker": "E:\\Project\\RelativityAssessment\\Agent\\DocumentLoggerAgentLocal.cs",
-              "RelativeDocumentMoniker": "Agent\\DocumentLoggerAgentLocal.cs",
-              "ToolTip": "E:\\Project\\RelativityAssessment\\Agent\\DocumentLoggerAgentLocal.cs*",
-              "RelativeToolTip": "Agent\\DocumentLoggerAgentLocal.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T13:13:16.042Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Bookmark",
               "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Bookmark",
@@ -70,68 +79,155 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FakeDBContext.cs",
-              "DocumentMoniker": "E:\\Project\\RelativityAssessment\\Agent\\FakeDBContext.cs",
-              "RelativeDocumentMoniker": "Agent\\FakeDBContext.cs",
-              "ToolTip": "E:\\Project\\RelativityAssessment\\Agent\\FakeDBContext.cs*",
-              "RelativeToolTip": "Agent\\FakeDBContext.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAnAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "ConfidentialityValidationPreSave.cs",
+              "DocumentMoniker": "D:\\Amit\\Repositories\\RelativityAssessment\\Relativity.Console\\Events\\ConfidentialityValidationPreSave.cs",
+              "RelativeDocumentMoniker": "..\\Relativity.Console\\Events\\ConfidentialityValidationPreSave.cs",
+              "ToolTip": "D:\\Amit\\Repositories\\RelativityAssessment\\Relativity.Console\\Events\\ConfidentialityValidationPreSave.cs",
+              "RelativeToolTip": "..\\Relativity.Console\\Events\\ConfidentialityValidationPreSave.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwAkAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T13:10:42.773Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FakeLogger.cs",
-              "DocumentMoniker": "E:\\Project\\RelativityAssessment\\Agent\\FakeLogger.cs",
-              "RelativeDocumentMoniker": "Agent\\FakeLogger.cs",
-              "ToolTip": "E:\\Project\\RelativityAssessment\\Agent\\FakeLogger.cs",
-              "RelativeToolTip": "Agent\\FakeLogger.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T13:09:52.744Z",
+              "WhenOpened": "2025-09-17T17:59:08.257Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "FakeHelper.cs",
-              "DocumentMoniker": "E:\\Project\\RelativityAssessment\\Agent\\FakeHelper.cs",
-              "RelativeDocumentMoniker": "Agent\\FakeHelper.cs",
-              "ToolTip": "E:\\Project\\RelativityAssessment\\Agent\\FakeHelper.cs",
-              "RelativeToolTip": "Agent\\FakeHelper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Title": "DocumentLoggerAgent.cs",
+              "DocumentMoniker": "D:\\Amit\\Repositories\\RelativityAssessment\\Relativity.Console\\DocumentLoggerAgent.cs",
+              "RelativeDocumentMoniker": "..\\Relativity.Console\\DocumentLoggerAgent.cs",
+              "ToolTip": "D:\\Amit\\Repositories\\RelativityAssessment\\Relativity.Console\\DocumentLoggerAgent.cs",
+              "RelativeToolTip": "..\\Relativity.Console\\DocumentLoggerAgent.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB8AAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T13:08:48.247Z",
+              "WhenOpened": "2025-09-17T17:54:23.46Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ILoggerFactory.cs",
+              "DocumentMoniker": "D:\\Amit\\Repositories\\RelativityAssessment\\Relativity.Console\\Fake\\ILoggerFactory.cs",
+              "RelativeDocumentMoniker": "..\\Relativity.Console\\Fake\\ILoggerFactory.cs",
+              "ToolTip": "D:\\Amit\\Repositories\\RelativityAssessment\\Relativity.Console\\Fake\\ILoggerFactory.cs",
+              "RelativeToolTip": "..\\Relativity.Console\\Fake\\ILoggerFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T17:25:28.894Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FakeLoggerFactory.cs",
+              "DocumentMoniker": "D:\\Amit\\Repositories\\RelativityAssessment\\Relativity.Console\\FakeLoggerFactory.cs",
+              "RelativeDocumentMoniker": "..\\Relativity.Console\\FakeLoggerFactory.cs",
+              "ToolTip": "D:\\Amit\\Repositories\\RelativityAssessment\\Relativity.Console\\FakeLoggerFactory.cs",
+              "RelativeToolTip": "..\\Relativity.Console\\FakeLoggerFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T17:20:23.059Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "E:\\Project\\EventHandlers\\Class1.cs",
-              "RelativeDocumentMoniker": "..\\EventHandlers\\Class1.cs",
-              "ToolTip": "E:\\Project\\EventHandlers\\Class1.cs",
-              "RelativeToolTip": "..\\EventHandlers\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Title": "FakeDBContext.cs",
+              "DocumentMoniker": "D:\\Amit\\Repositories\\RelativityAssessment\\Relativity.Console\\FakeDBContext.cs",
+              "RelativeDocumentMoniker": "..\\Relativity.Console\\FakeDBContext.cs",
+              "ToolTip": "D:\\Amit\\Repositories\\RelativityAssessment\\Relativity.Console\\FakeDBContext.cs",
+              "RelativeToolTip": "..\\Relativity.Console\\FakeDBContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T09:42:46.663Z",
+              "WhenOpened": "2025-09-17T17:19:39.998Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FakeHelper.cs",
+              "DocumentMoniker": "D:\\Amit\\Repositories\\RelativityAssessment\\Relativity.Console\\FakeHelper.cs",
+              "RelativeDocumentMoniker": "..\\Relativity.Console\\FakeHelper.cs",
+              "ToolTip": "D:\\Amit\\Repositories\\RelativityAssessment\\Relativity.Console\\FakeHelper.cs",
+              "RelativeToolTip": "..\\Relativity.Console\\FakeHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA0AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T17:18:28.686Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "DocumentLogger.cs",
-              "DocumentMoniker": "E:\\Project\\RelativityAssessment\\Agent\\DocumentLogger.cs",
-              "RelativeDocumentMoniker": "Agent\\DocumentLogger.cs",
-              "ToolTip": "E:\\Project\\RelativityAssessment\\Agent\\DocumentLogger.cs",
-              "RelativeToolTip": "Agent\\DocumentLogger.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Amit\\Repositories\\RelativityAssessment\\Relativity.Console\\Program.cs",
+              "RelativeDocumentMoniker": "..\\Relativity.Console\\Program.cs",
+              "ToolTip": "D:\\Amit\\Repositories\\RelativityAssessment\\Relativity.Console\\Program.cs",
+              "RelativeToolTip": "..\\Relativity.Console\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T07:43:33.705Z",
+              "WhenOpened": "2025-09-17T16:52:05.466Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DocumentLoggerAgentLocal.cs",
+              "DocumentMoniker": "D:\\Amit\\Repositories\\RelativityAssessment\\Relativity.Console\\DocumentLoggerAgentLocal.cs",
+              "RelativeDocumentMoniker": "..\\Relativity.Console\\DocumentLoggerAgentLocal.cs",
+              "ToolTip": "D:\\Amit\\Repositories\\RelativityAssessment\\Relativity.Console\\DocumentLoggerAgentLocal.cs",
+              "RelativeToolTip": "..\\Relativity.Console\\DocumentLoggerAgentLocal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T16:58:21.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Amit\\Repositories\\RelativityAssessment\\RelativityAssessment\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Amit\\Repositories\\RelativityAssessment\\RelativityAssessment\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T16:33:04.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "QuickMetadataViewer.cshtml.cs",
+              "DocumentMoniker": "D:\\Amit\\Repositories\\RelativityAssessment\\RelativityApp\\Pages\\QuickMetadataViewer.cshtml.cs",
+              "RelativeDocumentMoniker": "..\\RelativityApp\\Pages\\QuickMetadataViewer.cshtml.cs",
+              "ToolTip": "D:\\Amit\\Repositories\\RelativityAssessment\\RelativityApp\\Pages\\QuickMetadataViewer.cshtml.cs",
+              "RelativeToolTip": "..\\RelativityApp\\Pages\\QuickMetadataViewer.cshtml.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwA8AAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T16:40:30.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "QuickMetadataViewer.cshtml",
+              "DocumentMoniker": "D:\\Amit\\Repositories\\RelativityAssessment\\RelativityApp\\Pages\\QuickMetadataViewer.cshtml",
+              "RelativeDocumentMoniker": "..\\RelativityApp\\Pages\\QuickMetadataViewer.cshtml",
+              "ToolTip": "D:\\Amit\\Repositories\\RelativityAssessment\\RelativityApp\\Pages\\QuickMetadataViewer.cshtml",
+              "RelativeToolTip": "..\\RelativityApp\\Pages\\QuickMetadataViewer.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-17T16:40:19.241Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "E:\\Project\\EventHandlers\\Class1.cs",
+              "ToolTip": "E:\\Project\\EventHandlers\\Class1.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T09:42:46.663Z"
             }
           ]
         }
