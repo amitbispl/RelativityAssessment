@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35514.174
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RelativityAssessment", "RelativityAssessment.csproj", "{6834E31A-2840-4E04-AF72-453C25B6B592}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agent", "Agent\Agent.csproj", "{945C74D1-B1EE-4CE2-B5CC-DACF2EAE47A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventHandlers", "..\EventHandlers\EventHandlers.csproj", "{5EF5A2E8-D939-4BD7-BC71-D85E8ABF7E4A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6834E31A-2840-4E04-AF72-453C25B6B592}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6834E31A-2840-4E04-AF72-453C25B6B592}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6834E31A-2840-4E04-AF72-453C25B6B592}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6834E31A-2840-4E04-AF72-453C25B6B592}.Release|Any CPU.Build.0 = Release|Any CPU
+		{945C74D1-B1EE-4CE2-B5CC-DACF2EAE47A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{945C74D1-B1EE-4CE2-B5CC-DACF2EAE47A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{945C74D1-B1EE-4CE2-B5CC-DACF2EAE47A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{945C74D1-B1EE-4CE2-B5CC-DACF2EAE47A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EF5A2E8-D939-4BD7-BC71-D85E8ABF7E4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EF5A2E8-D939-4BD7-BC71-D85E8ABF7E4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EF5A2E8-D939-4BD7-BC71-D85E8ABF7E4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EF5A2E8-D939-4BD7-BC71-D85E8ABF7E4A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

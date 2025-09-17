@@ -1,0 +1,14 @@
+E:\Project\RelativityAssessment\Agent\bin\Debug\Agent.dll
+E:\Project\RelativityAssessment\Agent\bin\Debug\Agent.pdb
+E:\Project\RelativityAssessment\Agent\obj\Debug\Agent.csproj.AssemblyReference.cache
+E:\Project\RelativityAssessment\Agent\obj\Debug\Agent.csproj.CoreCompileInputs.cache
+E:\Project\RelativityAssessment\Agent\obj\Debug\Agent.dll
+E:\Project\RelativityAssessment\Agent\obj\Debug\Agent.pdb
+E:\Project\RelativityAssessment\Agent\bin\Debug\kCura.Agent.dll
+E:\Project\RelativityAssessment\Agent\bin\Debug\kCura.EventHandler.dll
+E:\Project\RelativityAssessment\Agent\bin\Debug\Relativity.API.dll
+E:\Project\RelativityAssessment\Agent\bin\Debug\Newtonsoft.Json.dll
+E:\Project\RelativityAssessment\Agent\bin\Debug\kCura.Agent.xml
+E:\Project\RelativityAssessment\Agent\bin\Debug\kCura.EventHandler.xml
+E:\Project\RelativityAssessment\Agent\bin\Debug\Relativity.API.xml
+E:\Project\RelativityAssessment\Agent\obj\Debug\Agent.csproj.Up2Date

@@ -1,0 +1,141 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Project\\RelativityAssessment\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{945C74D1-B1EE-4CE2-B5CC-DACF2EAE47A8}|Agent\\Agent.csproj|e:\\project\\relativityassessment\\agent\\documentloggeragentlocal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{945C74D1-B1EE-4CE2-B5CC-DACF2EAE47A8}|Agent\\Agent.csproj|solutionrelative:agent\\documentloggeragentlocal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{945C74D1-B1EE-4CE2-B5CC-DACF2EAE47A8}|Agent\\Agent.csproj|e:\\project\\relativityassessment\\agent\\fakehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{945C74D1-B1EE-4CE2-B5CC-DACF2EAE47A8}|Agent\\Agent.csproj|solutionrelative:agent\\fakehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{945C74D1-B1EE-4CE2-B5CC-DACF2EAE47A8}|Agent\\Agent.csproj|e:\\project\\relativityassessment\\agent\\documentlogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{945C74D1-B1EE-4CE2-B5CC-DACF2EAE47A8}|Agent\\Agent.csproj|solutionrelative:agent\\documentlogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{945C74D1-B1EE-4CE2-B5CC-DACF2EAE47A8}|Agent\\Agent.csproj|e:\\project\\relativityassessment\\agent\\fakedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{945C74D1-B1EE-4CE2-B5CC-DACF2EAE47A8}|Agent\\Agent.csproj|solutionrelative:agent\\fakedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{945C74D1-B1EE-4CE2-B5CC-DACF2EAE47A8}|Agent\\Agent.csproj|e:\\project\\relativityassessment\\agent\\fakelogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{945C74D1-B1EE-4CE2-B5CC-DACF2EAE47A8}|Agent\\Agent.csproj|solutionrelative:agent\\fakelogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EF5A2E8-D939-4BD7-BC71-D85E8ABF7E4A}|..\\EventHandlers\\EventHandlers.csproj|e:\\project\\eventhandlers\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DocumentLoggerAgentLocal.cs",
+              "DocumentMoniker": "E:\\Project\\RelativityAssessment\\Agent\\DocumentLoggerAgentLocal.cs",
+              "RelativeDocumentMoniker": "Agent\\DocumentLoggerAgentLocal.cs",
+              "ToolTip": "E:\\Project\\RelativityAssessment\\Agent\\DocumentLoggerAgentLocal.cs",
+              "RelativeToolTip": "Agent\\DocumentLoggerAgentLocal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T13:13:16.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FakeDBContext.cs",
+              "DocumentMoniker": "E:\\Project\\RelativityAssessment\\Agent\\FakeDBContext.cs",
+              "RelativeDocumentMoniker": "Agent\\FakeDBContext.cs",
+              "ToolTip": "E:\\Project\\RelativityAssessment\\Agent\\FakeDBContext.cs",
+              "RelativeToolTip": "Agent\\FakeDBContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T13:10:42.773Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FakeLogger.cs",
+              "DocumentMoniker": "E:\\Project\\RelativityAssessment\\Agent\\FakeLogger.cs",
+              "RelativeDocumentMoniker": "Agent\\FakeLogger.cs",
+              "ToolTip": "E:\\Project\\RelativityAssessment\\Agent\\FakeLogger.cs",
+              "RelativeToolTip": "Agent\\FakeLogger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T13:09:52.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FakeHelper.cs",
+              "DocumentMoniker": "E:\\Project\\RelativityAssessment\\Agent\\FakeHelper.cs",
+              "RelativeDocumentMoniker": "Agent\\FakeHelper.cs",
+              "ToolTip": "E:\\Project\\RelativityAssessment\\Agent\\FakeHelper.cs",
+              "RelativeToolTip": "Agent\\FakeHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T13:08:48.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "E:\\Project\\EventHandlers\\Class1.cs",
+              "RelativeDocumentMoniker": "..\\EventHandlers\\Class1.cs",
+              "ToolTip": "E:\\Project\\EventHandlers\\Class1.cs",
+              "RelativeToolTip": "..\\EventHandlers\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T09:42:46.663Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DocumentLogger.cs",
+              "DocumentMoniker": "E:\\Project\\RelativityAssessment\\Agent\\DocumentLogger.cs",
+              "RelativeDocumentMoniker": "Agent\\DocumentLogger.cs",
+              "ToolTip": "E:\\Project\\RelativityAssessment\\Agent\\DocumentLogger.cs",
+              "RelativeToolTip": "Agent\\DocumentLogger.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T07:43:33.705Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

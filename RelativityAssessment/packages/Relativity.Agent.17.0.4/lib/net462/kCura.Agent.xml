@@ -1,0 +1,923 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+kCura.Agent
+</name>
+</assembly>
+<members>
+<member name="T:kCura.Agent.AgentBase">
+ <summary>
+ Describes basic properties, methods and events related to agent instances.
+ </summary>
+</member>
+<member name="E:kCura.Agent.AgentBase.OnAgentExecuteBegin">
+ <summary>
+ Raised when agent instance starts executing.
+ </summary>
+</member>
+<member name="E:kCura.Agent.AgentBase.OnAgentExecuteFinish">
+ <summary>
+ Raised when agent instance stops executing.
+ </summary>
+</member>
+<member name="E:kCura.Agent.AgentBase.OnAgentEnable">
+ <summary>
+ Raised when agent instance changes its status to Enabled.
+ </summary>
+</member>
+<member name="E:kCura.Agent.AgentBase.OnAgentDisabled">
+ <summary>
+ Raised when agent instance changes its status to Disabled.
+ </summary>
+</member>
+<member name="E:kCura.Agent.AgentBase.OnAgentException">
+ <summary>
+ Raised when agent instance experiences an exception while executing.
+ </summary>
+</member>
+<member name="E:kCura.Agent.AgentBase.OnMessage">
+ <summary>
+ Raised when agent instance attempts to log message.
+ </summary>
+ <param name="agentMessage">Object which contains useful information about the agent instance logging message, i.e. agent name, log level, detail message, etc.</param>
+</member>
+<member name="E:kCura.Agent.AgentBase.OnAgentExecuteException">
+ <summary>
+ Non-public event raised when agent instance catches an exception while executing.
+ </summary>
+</member>
+<member name="P:kCura.Agent.AgentBase.Name">
+ <summary>
+ Read-only property which is overridden in a derived class.
+ </summary>
+ <value>
+ The name.
+ </value>
+ <returns></returns>
+</member>
+<member name="M:kCura.Agent.AgentBase.Execute">
+ <summary>
+ Sub which is overridden in a derived class.
+ </summary>
+</member>
+<member name="P:kCura.Agent.AgentBase.AssemblyPath">
+ <summary>
+ Read-only property returning assembly path.
+ </summary>
+ <value>
+ The assembly path.
+ </value>
+ <returns></returns>
+</member>
+<member name="P:kCura.Agent.AgentBase.ClassName">
+ <summary>
+ Read-only property returning class name.
+ </summary>
+ <value>
+ The name of the class.
+ </value>
+ <returns></returns>
+</member>
+<member name="P:kCura.Agent.AgentBase.LastMessage">
+ <summary>
+ Read-only property returning last message logged by agent instance.
+ </summary>
+ <value>
+ The last message.
+ </value>
+ <returns>Returns an object type of AgentMessage.</returns>
+</member>
+<member name="P:kCura.Agent.AgentBase.AgentID">
+ <summary>
+ Read-only property returning unique ID of an agent.
+ </summary>
+ <value>
+ The agent identifier.
+ </value>
+ <returns></returns>
+</member>
+<member name="P:kCura.Agent.AgentBase.Executing">
+ <summary>
+ Read-only property returning Boolean flag indicating whether agent is currently executing.
+ </summary>
+ <value>
+   <c>true</c> if [executing]; otherwise, <c>false</c>.
+ </value>
+ <returns></returns>
+</member>
+<member name="P:kCura.Agent.AgentBase.ToBeRemoved">
+ <summary>
+ When true, this means the agent is marked for removal, and will not take any new jobs. Note that this value should never be set to false.
+ </summary>
+ <value>
+   <c>true</c> if [to be removed]; otherwise, <c>false</c>.
+ </value>
+</member>
+<member name="P:kCura.Agent.AgentBase.LoggingLevel">
+ <summary>
+ Gets and sets logging level of an agent instance.
+ </summary>
+ <value>
+ The logging level.
+ </value>
+ <returns></returns>
+</member>
+<member name="P:kCura.Agent.AgentBase.StartTime">
+ <summary>
+ Records the current time of the agent execution.
+ </summary>
+ <value>
+ The start time.
+ </value>
+ <returns></returns>
+</member>
+<member name="P:kCura.Agent.AgentBase.Helper">
+ <summary>
+ Gets the Relativity.API.IAgentHelper object
+ </summary>
+ <value>
+ The helper.
+ </value>
+</member>
+<member name="P:kCura.Agent.AgentBase.IsHealthy">
+ <summary>
+ Get whether the agent is healthy to do work
+ </summary>
+ <value>
+   <c>true</c> if the agent is healthy to continue executing; if something determines it's unhealthy, <c>false</c>.
+ </value>
+</member>
+<member name="P:kCura.Agent.AgentBase.ServicesAPIUri">
+ <summary>
+ Gets or sets the URL to the nearest Services API endpoint
+ </summary>
+ <value>
+ The services API URI.
+ </value>
+ <returns></returns>
+</member>
+<member name="M:kCura.Agent.AgentBase.SetClassInfo(System.String,System.String,System.Int32,kCura.Agent.AgentType)">
+ <summary>
+ Sets the class information.
+ </summary>
+ <param name="assemblyPath">The assembly path.</param>
+ <param name="className">Name of the class.</param>
+ <param name="agentID">The agent identifier.</param>
+ <param name="serviceType">Type of service the agent is running on.</param>
+</member>
+<member name="M:kCura.Agent.AgentBase.RunTimerExecute">
+ <summary>
+ Shortcut method for unit tests
+ </summary>
+</member>
+<member name="M:kCura.Agent.AgentBase.TimerExecute(System.Object)">
+ <summary>
+ Sub which is used to start a timer on an agent instance and also calls Me.Execute().
+ </summary>
+ <param name="state">The state.</param>
+</member>
+<member name="M:kCura.Agent.AgentBase.RaiseMessage(System.String,System.Int32)">
+ <summary>
+ Raises a message during agent execution.
+ </summary>
+ <param name="message">The message providing informational content.</param>
+ <param name="level">Logging level of message raised.</param>
+ <remarks>Possible values for log level are: 1 = error or warning, 10 = message. </remarks>
+</member>
+<member name="M:kCura.Agent.AgentBase.RaiseMessageNoLogging(System.String,System.Int32)">
+ <summary>
+ Raises a message during agent execution but does not log to Relativity.Logging framework.
+ </summary>
+ <param name="message">The message providing informational content.</param>
+ <param name="level">Logging level of message raised.</param>
+ <remarks>
+ Possible values for log level are: 1 = error or warning, 10 = message.
+ Continues to log to the event viewer.
+ </remarks>
+</member>
+<member name="M:kCura.Agent.AgentBase.RaiseWarning(System.String)">
+ <summary>
+ Raises a warning during agent execution.
+ </summary>
+ <param name="message">The message providing warning content.</param>
+</member>
+<member name="M:kCura.Agent.AgentBase.RaiseWarning(System.String,System.String)">
+ <summary>
+ Raises a warning during agent execution.
+ </summary>
+ <param name="message">The message providing warning content.</param>
+ <param name="detailMessage">The detail message.</param>
+</member>
+<member name="M:kCura.Agent.AgentBase.RaiseError(System.String,System.String)">
+ <summary>
+ Raises an error during agent execution.
+ </summary>
+ <param name="message">The basic message that describes the error.</param>
+ <param name="detailMessage">The detailed message that describes the error.</param>
+</member>
+<member name="M:kCura.Agent.AgentBase.UpdateIsShuttingDown">
+ <summary>
+ Sets agent shutting down to true during Agent Manager shut down or restarts
+ </summary>
+</member>
+<member name="M:kCura.Agent.AgentBase.HandleMessages(kCura.Agent.AgentMessage,System.Boolean)">
+ <summary>
+ Handles the messages.
+ </summary>
+</member>
+<member name="P:kCura.Agent.AgentBase.Interval">
+ <summary>
+ Read-only property returning double number indicating the interval at which the agent instance runs.
+ </summary>
+ <value>
+ The interval.
+ </value>
+ <returns></returns><remarks>
+ Interval value is stored in milli-seconds, but that property converts it to seconds.
+ </remarks>
+</member>
+<member name="M:kCura.Agent.AgentBase.SetInterval(System.Double)">
+ <summary>
+ Sets the run interval of an agent instance.
+ </summary>
+ <param name="value">Sets the length of time the given agent instance should check in. Value is in seconds.</param>
+ <returns>
+ Returns an agent instance time (in seconds) left for its next check-in.
+ </returns>
+</member>
+<member name="P:kCura.Agent.AgentBase.Enabled">
+ <summary>
+ Gets and sets the flag to mark an agent instance as enabled or disabled.
+ </summary>
+ <value>
+ True/False
+ </value>
+ <returns>True/False</returns><remarks>
+ Upon setup it raises relevant event - OnAgentEnable/OnAgentDisabled and either stops or starts a timer.
+ </remarks>
+</member>
+<member name="P:kCura.Agent.AgentBase.UseFixedInterval">
+ <summary>
+ Sets an agent instance to check in on a fixed time interval.
+ </summary>
+ <value>
+   <c>true</c> if [use fixed interval]; otherwise, <c>false</c>.
+ </value>
+ <returns>True/False</returns><remarks>
+ It might be depracated.
+ </remarks>
+</member>
+<member name="M:kCura.Agent.AgentBase.StopTimer">
+ <summary>
+ Stops the timer.
+ </summary>
+</member>
+<member name="M:kCura.Agent.AgentBase.StartTimer(System.Int32)">
+ <summary>
+ Starts the timer in a given number of miliseconds.
+ </summary>
+ <param name="dueTime">Integer value indicating a delay in miliseconds after which the time should start.</param>
+</member>
+<member name="P:kCura.Agent.AgentBase.LastExecutionTime">
+ <summary>
+ Read-only property returning time when agent instance last checked its execution.
+ </summary>
+ <value>
+ The last execution time.
+ </value>
+ <returns></returns>
+</member>
+<member name="M:kCura.Agent.AgentBase.UpdateTimer">
+ <summary>
+ Sub which updates the timer of agent instance if not currently executing.
+ </summary>
+</member>
+<member name="M:kCura.Agent.AgentBase.GetDueTime">
+ <summary>
+ Gets the due time.
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:kCura.Agent.AgentBase.#ctor">
+ <summary>
+ Instantiates an object of AgentBase type.
+ </summary>
+</member>
+<member name="M:kCura.Agent.AgentBase.KillTimer">
+ <summary>
+ Calls Dispose() on timer object and releases its resources.
+ </summary>
+</member>
+<member name="M:kCura.Agent.AgentBase.GetResourceGroupIDs">
+ <summary>
+ Returns an <see cref="T:System.Collections.Generic.IEnumerable`1" /> containing all ResourceGroupIDs this agent is a part of.
+ </summary>
+ <returns>
+ Collection of ResourceGroupIDs
+ </returns>
+</member>
+<member name="M:kCura.Agent.AgentBase.GetAgentServerID">
+ <summary>
+ Gets the workspace server.
+ </summary>
+ <returns>ID of the agent server that this agent is running on</returns>
+</member>
+<member name="M:kCura.Agent.AgentBase.GetDatabaseConnection(System.Int32)">
+ <summary>
+ Returns database connection based on the workspace ID passed in as a parameter.
+ </summary>
+ <param name="workspaceID">Indicates workspace ID for which a database connection should be returned.</param>
+ <returns>
+ Returns SqlConnection object.
+ </returns><remarks>
+ If workspaceID = -1 then the function returns master database connection.
+ </remarks>
+</member>
+<member name="M:kCura.Agent.AgentBase.GetWorkspaceServer(kCura.Data.RowDataGateway.BaseContext,System.Int32)">
+ <summary>
+ Gets the workspace server.
+ </summary>
+ <param name="context">The context.</param>
+ <param name="workspaceID">The workspace identifier.</param>
+ <returns></returns>
+</member>
+<member name="M:kCura.Agent.AgentBase.GetDatabaseName(System.Int32)">
+ <summary>
+ Gets the name of the database.
+ </summary>
+ <param name="workspaceID">The workspace identifier.</param>
+ <returns></returns>
+</member>
+<member name="M:kCura.Agent.AgentBase.IsOffHours">
+ <summary>
+ Indicates whether the current time is during the off hours for an agent.
+ </summary>
+ <returns>True if the current time is during off hours for the agent; otherwise, false.</returns>
+ <remarks>The off hours for an agent are determined by the settings in the AgentOffHourStartTime and AgentOffHourEndTime configuration values.
+ If the AgentOffHourEndTime is less than the AgentOffHourStartTime, one day will be added to AgentOffHourEndTime to account for off hours that cross over midnight.</remarks>
+</member>
+<member name="M:kCura.Agent.AgentBase.IsBetweenTimes(System.DateTime,System.DateTime)">
+ <summary>
+ Returns whether the current time is between two specified <see cref="T:System.DateTime" /> times.
+ </summary>
+ <param name="startTime">The starting time for the off hours.</param>
+ <param name="endTime">The ending time for the off hours</param>
+ <returns>True if the current time is between the two values; otherwise, false.</returns>
+ <remarks>If the end time is smaller than the starting time, then one day will be added to the end time.</remarks>
+</member>
+<member name="T:kCura.Agent.AgentMessage">
+ <summary>
+ Serializable class which defines message object for agent instances.
+ </summary>
+</member>
+<member name="T:kCura.Agent.AgentMessage.AgentMessageType">
+ <summary>
+ Enumeration of message types.
+ </summary><remarks>
+ Informational = 1, Warning = 2, Error = 3.
+ </remarks>
+</member>
+<member name="P:kCura.Agent.AgentMessage.Message">
+ <summary>
+ Read-only property returning string message.
+ </summary>
+ <value>
+ The message.
+ </value>
+ <returns></returns>
+</member>
+<member name="P:kCura.Agent.AgentMessage.DetailMessage">
+ <summary>
+ Read-only property returning string detail message.
+ </summary>
+ <value>
+ The detail message.
+ </value>
+ <returns></returns>
+</member>
+<member name="P:kCura.Agent.AgentMessage.LogLevel">
+ <summary>
+ Read-only property returning logging level as integer.
+ </summary>
+ <value>
+ The log level.
+ </value>
+ <returns></returns>
+</member>
+<member name="P:kCura.Agent.AgentMessage.AgentName">
+ <summary>
+ Read-only property returning name of agent.
+ </summary>
+ <value>
+ The name of the agent.
+ </value>
+ <returns></returns>
+</member>
+<member name="P:kCura.Agent.AgentMessage.MessageType">
+ <summary>
+ Read-only property returning type of a message (enumerated).
+ </summary>
+ <value>
+ The type of the message.
+ </value>
+ <returns></returns>
+</member>
+<member name="P:kCura.Agent.AgentMessage.Time">
+ <summary>
+ Read-only property returning time value of message creation.
+ </summary>
+ <value>
+ The time.
+ </value>
+ <returns></returns>
+</member>
+<member name="M:kCura.Agent.AgentMessage.#ctor(System.String,System.Int32,System.String,kCura.Agent.AgentMessage.AgentMessageType,System.String)">
+ <summary>
+ Initializes a new instance of the <see cref="T:kCura.Agent.AgentMessage"/> class.
+ </summary>
+ <param name="message">The message.</param>
+ <param name="level">The level.</param>
+ <param name="agentName">Name of the agent.</param>
+ <param name="messageType">Type of the message.</param>
+ <param name="detailMessage">The detail message.</param>
+</member>
+<member name="P:kCura.Agent.Config.ConfigSettings">
+ <summary>
+ Gets the instance settings for the kCura.EDDS.Agents section.
+ </summary>
+ <returns>Dictionary holding the instance settings.</returns>
+</member>
+<member name="P:kCura.Agent.Config.AgentOffHourStartTime">
+ <summary>
+ Gets the AgentOffHourStartTime instance setting.
+ </summary>
+ <returns>String representation of the start time for agent's off hours</returns>
+</member>
+<member name="P:kCura.Agent.Config.AgentOffHourEndTime">
+ <summary>
+ Gets the AgentOffHourEndTime instance setting.
+ </summary>
+ <returns>String representation of the end time for agent's off hours.</returns>
+</member>
+<member name="T:kCura.Agent.CustomAttributes.Name">
+ <summary>
+ Serializable and not inheritable class which provides custom attribute Name for agent instances. It inherits from System.Attribute.
+ </summary>
+</member>
+<member name="P:kCura.Agent.CustomAttributes.Name.Name">
+ <summary>
+ Read-only property returning name of agent instance.
+ </summary>
+ <value>
+ The name.
+ </value>
+ <returns></returns>
+</member>
+<member name="M:kCura.Agent.CustomAttributes.Name.#ctor(System.String)">
+ <summary>
+ Initializes a new instance of the Name class
+ </summary>
+ <param name="value">String value used for naming an agent instance.</param>
+</member>
+<member name="T:kCura.Agent.DTO.Agent">
+ <summary>
+ This class describes DTO object for agent instance.
+ </summary>
+</member>
+<member name="P:kCura.Agent.DTO.Agent.Server">
+ <summary>
+ Gets/Sets server name for an agent instance.
+ </summary>
+ <value>
+ The server.
+ </value>
+ <returns>String value indicating a server name.</returns><remarks>
+ Deprecated. We are using ServerArtifactID now to identify a server in which the agent instance resides.
+ </remarks>
+</member>
+<member name="P:kCura.Agent.DTO.Agent.Name">
+ <summary>
+ Gets/Sets an agent instance name.
+ </summary>
+ <value>
+ The name.
+ </value>
+ <returns>String value indicating agent instance name.</returns>
+</member>
+<member name="P:kCura.Agent.DTO.Agent.Message">
+ <summary>
+ Gets/Sets a message for an agent instance.
+ </summary>
+ <value>
+ The message.
+ </value>
+ <returns></returns><remarks>
+ Most often it is used to indicate a state of an agent instance.
+ </remarks>
+</member>
+<member name="P:kCura.Agent.DTO.Agent.DetailMessage">
+ <summary>
+ Gets/Sets more detailed message for an agent instance.
+ </summary>
+ <value>
+ The detail message.
+ </value>
+ <returns></returns>
+</member>
+<member name="P:kCura.Agent.DTO.Agent.MessageTime">
+ <summary>
+ Gets/Sets a time of message being logged into a database.
+ </summary>
+ <value>
+ The message time.
+ </value>
+ <returns>DateTime indicating when the message has been created.</returns>
+</member>
+<member name="P:kCura.Agent.DTO.Agent.LastUpdate">
+ <summary>
+ Gets/Sets the time when agent instance updated its info last time.
+ </summary>
+ <value>
+ The last update.
+ </value>
+ <returns></returns>
+</member>
+<member name="P:kCura.Agent.DTO.Agent.MessageType">
+ <summary>
+ Gets or sets the type of the message.
+ </summary>
+ <value>
+ The type of the message.
+ </value>
+ <returns></returns>
+</member>
+<member name="P:kCura.Agent.DTO.Agent.Enabled">
+ <summary>
+ Gets or sets a value indicating whether [enabled].
+ </summary>
+ <value>
+   <c>true</c> if [enabled]; otherwise, <c>false</c>.
+ </value>
+</member>
+<member name="P:kCura.Agent.DTO.Agent.Interval">
+ <summary>
+ Gets or sets the interval.
+ </summary>
+ <value>
+ The interval.
+ </value>
+</member>
+<member name="P:kCura.Agent.DTO.Agent.Action">
+ <summary>
+ Gets or sets the action.
+ </summary>
+ <value>
+ The action.
+ </value>
+</member>
+<member name="T:kCura.Agent.IAgentBaseProxy">
+ <summary>
+ An interface used for working with agents.
+ </summary><remarks>
+ It contains all necessary agent properties and events which are passed from Winform/Windows Service to AgentBase and vice-versa.
+ </remarks>
+</member>
+<member name="P:kCura.Agent.IAgentBaseProxy.Enabled">
+ <summary>
+ Property which indicates if an agent instance is enabled.
+ </summary>
+ <value>
+   <c>true</c> if [enabled]; otherwise, <c>false</c>.
+ </value>
+ <returns>True/False</returns>
+</member>
+<member name="P:kCura.Agent.IAgentBaseProxy.Executing">
+ <summary>
+ This read-only property Returns the flag indicating whether a given agent instance is currently running a task or not.
+ </summary>
+ <value>
+ True/False
+ </value>
+ <returns></returns>
+</member>
+<member name="P:kCura.Agent.IAgentBaseProxy.LastMessage">
+ <summary>
+ This read-only property implements IAgentBaseProxy.LastMessage
+ </summary>
+ <value>
+ The last message.
+ </value>
+ <returns>It returns last message produced by given agent instance.</returns>
+</member>
+<member name="P:kCura.Agent.IAgentBaseProxy.LoggingLevel">
+ <summary>
+ This property gets/sets logging level of a given agent instance.
+ </summary>
+ <value>
+ The logging level.
+ </value>
+ <returns>Integer value indicating a logging level. It can be 1, 5 or 10.</returns><remarks>
+ 1 ==&gt; Log critical errors only, 5 ==&gt; Log critical errors and warnings, 10 ==&gt; Log everything.
+ </remarks>
+</member>
+<member name="P:kCura.Agent.IAgentBaseProxy.ToBeRemoved">
+ <summary>
+ This property marks an agent instance to be deleted once its resources are released.
+ </summary>
+ <value>
+   <c>true</c> if [to be removed]; otherwise, <c>false</c>.
+ </value>
+ <returns></returns><remarks>
+ Agent Manager is responsible for checking that property and taking an action based on its value.
+ </remarks>
+</member>
+<member name="P:kCura.Agent.IAgentBaseProxy.IsHealthy">
+<summary>
+ This ReadOnly property Returns the flag indicating whether a given agent is healthy.
+ </summary>
+ ' <value>
+   <c>true</c> if [is healthy]; otherwise, <c>false</c>.
+ </value>
+ <returns></returns><remarks>
+ Agent Manager is responsible for setting property when agent manager is unhealty.
+ </remarks>
+</member>
+<member name="P:kCura.Agent.IAgentBaseProxy.UseFixedInterval">
+ <summary>
+ This property sets an agent instace to check in on a fixed time interval.
+ </summary>
+ <value>
+   <c>true</c> if [use fixed interval]; otherwise, <c>false</c>.
+ </value>
+ <returns></returns><remarks>
+ It might be depracated.
+ </remarks>
+</member>
+<member name="P:kCura.Agent.IAgentBaseProxy.StartTime">
+ <summary>
+ Gets the start time.
+ </summary>
+ <value>
+ The start time.
+ </value>
+</member>
+<member name="M:kCura.Agent.IAgentBaseProxy.Initialize(System.String,System.String)">
+ <summary>
+ This sub is used to instantiate local assembly and agent objects.
+ </summary>
+ <param name="Path">String value indicating an assembly location.</param>
+ <param name="assemblyName">String value indicating which assembly is to be used to instantiate an agent instance.</param>
+</member>
+<member name="M:kCura.Agent.IAgentBaseProxy.SetInterval(System.Double)">
+ <summary>
+ This sub sets an interval of an agent instance.
+ </summary>
+ <param name="value">Double value which sets the length of time the given agent instance should check in. Value is in seconds.</param>
+ <returns>
+ Returns an agent instance time (in seconds) left for its next check-in.
+ </returns>
+</member>
+<member name="M:kCura.Agent.IAgentBaseProxy.SetClassInfo(System.String,System.String,System.Int32,Relativity.API.ILicenseMgr,kCura.Agent.AgentType)">
+ <summary>
+ This sub sets basic agent properties - assembly path, class name and agent id.
+ </summary>
+ <param name="assemblyPath">String value depicting a path for an assembly to load.</param>
+ <param name="className">String value depicting class name of a given agent instance.</param>
+ <param name="agentID">Integer value depicting unique key of an agent instance.</param>
+ <param name="licenseMgrProxy">ILicenseMgr object to allow cross app domain license calls.</param>
+ <param name="serviceType">Type of service the agent is running on.</param>
+</member>
+<member name="E:kCura.Agent.IAgentBaseProxy.OnMessage">
+ <summary>
+ Event used to pass messages between Winform/Windows Service and AgentBase.
+ </summary>
+ <param name="message">AgentMessage type of object containing message and other logging properties.</param>
+</member>
+<member name="M:kCura.Agent.IAgentBaseProxy.HandleOnMessage(kCura.Agent.AgentMessage)">
+ <summary>
+ Handler for OnMessage event.
+ </summary>
+ <param name="message">String value depicting a message which is paassed to this event handler. Message is type of AgentMessage.</param><remarks>
+ This event handler is not used here. It has to be impleemnted here to enable 2-way communication channel between AgentBase and Winform/Windows Service instances.
+ </remarks>
+</member>
+<member name="M:kCura.Agent.IAgentBaseProxy.SetReference(kCura.Agent.IAgentBaseProxy@)">
+ <summary>
+ This sub sets a reference between two objects of same type to enable 2-way cross-app domain communication.
+ </summary>
+ <param name="passBack">Object passed by reference, type of IAgentBaseProxy.</param>
+</member>
+<member name="P:kCura.Agent.IAgentBaseProxy.AssemblyPath">
+ <summary>
+ This read-only property returns an assembly path value of a given agent instance.
+ </summary>
+ <value>
+ The assembly path.
+ </value>
+ <returns></returns>
+</member>
+<member name="P:kCura.Agent.IAgentBaseProxy.ClassName">
+ <summary>
+ This read-only property returns class name used to define agent instance name.
+ </summary>
+ <value>
+ The name of the class.
+ </value>
+ <returns></returns>
+</member>
+<member name="P:kCura.Agent.IAgentBaseProxy.Interval">
+ <summary>
+ This read-only property returns a value expressed in seconds describing an interval a given agent instance will perform its check-ins.
+ </summary>
+ <value>
+ The interval.
+ </value>
+ <returns></returns>
+</member>
+<member name="P:kCura.Agent.IAgentBaseProxy.Name">
+ <summary>
+ This read-only property returns an agent instance name.
+ </summary>
+ <value>
+ The name.
+ </value>
+ <returns></returns>
+</member>
+<member name="E:kCura.Agent.IAgentBaseProxy.OnAgentDispose">
+ <summary>
+ This event is raised upon agent disposal.
+ </summary>
+</member>
+<member name="E:kCura.Agent.IAgentBaseProxy.OnAgentDisabled">
+ <summary>
+ This event is raised when agent gets disabled.
+ </summary>
+</member>
+<member name="M:kCura.Agent.IAgentBaseProxy.HandleOnAgentDisabled">
+ <summary>
+ This sub implements handler for event OnAgentDisabled.
+ </summary>
+</member>
+<member name="E:kCura.Agent.IAgentBaseProxy.OnAgentEnable">
+ <summary>
+ This event is raised when agent gets enabled.
+ </summary>
+</member>
+<member name="M:kCura.Agent.IAgentBaseProxy.HandleOnAgentEnable">
+ <summary>
+ This sub implements handler for event OnAgentEnable.
+ </summary>
+</member>
+<member name="E:kCura.Agent.IAgentBaseProxy.OnAgentExecuteBegin">
+ <summary>
+ This event is raised when agent starts executing.
+ </summary>
+</member>
+<member name="M:kCura.Agent.IAgentBaseProxy.HandleOnAgentExecuteBegin">
+ <summary>
+ This sub implements handler for event OnAgentExecuteBegin.
+ </summary>
+</member>
+<member name="E:kCura.Agent.IAgentBaseProxy.OnAgentExecuteFinish">
+ <summary>
+ This event is raised when agent execution completes.
+ </summary>
+</member>
+<member name="M:kCura.Agent.IAgentBaseProxy.HandleOnAgentExecuteFinish">
+ <summary>
+ This sub implements handler for OnAgentExecuteFinish event.
+ </summary>
+</member>
+<member name="E:kCura.Agent.IAgentBaseProxy.OnAgentExecuteException">
+ <summary>
+ This event is raised when agent execution throws an exception.
+ </summary>
+</member>
+<member name="M:kCura.Agent.IAgentBaseProxy.HandleOnAgentExecuteException">
+ <summary>
+ This sub implements handler for OnAgentExecuteException event.
+ </summary>
+</member>
+<member name="M:kCura.Agent.IAgentBaseProxy.UpdateIsShuttingDown">
+ <summary>
+ This sub sets agent shut down to true when agent shuts down or restarts.
+ </summary>
+</member>
+<member name="T:kCura.Agent.ServiceBusEnabledAgentBase`2">
+ <summary>
+
+ </summary>
+ <typeparam name="T">The Request Class</typeparam>
+ <typeparam name="Q">The Response Class. If you are not planning to send a response, you can just use 'string'. Only used if SendResponseAsync() is called.</typeparam>
+ <remarks></remarks>
+</member>
+<member name="P:kCura.Agent.ServiceBusEnabledAgentBase`2.NumberOfPriorities">
+ <summary>
+ Defines how many priorities should be used for this agent. For each priority, a seperate subscription is created on 
+ the request topic.
+ The default value is 3.
+ </summary>
+</member>
+<member name="P:kCura.Agent.ServiceBusEnabledAgentBase`2.Priorities">
+ <summary>
+ Defines what priorities there are. If no priorities are present, return New Integer() {} , and use topics.
+ If priorities are present, use Queues (But for now, we have topics).
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:kCura.Agent.ServiceBusEnabledAgentBase`2.ModifySubscriptionDetails(Relativity.ServiceBus.Contracts.Interfaces.ISubscriptionDetails)">
+ <summary>
+ Allows the consuming class to set properties on the SubscriptionDetails object. 
+ If not overridden, defaults will be used.
+ </summary>
+ <param name="details">Settings used when creating a Subscription</param>
+ <returns></returns>
+</member>
+<member name="M:kCura.Agent.ServiceBusEnabledAgentBase`2.ModifyTopicDetails(Relativity.ServiceBus.Contracts.Interfaces.ITopicDetails)">
+ <summary>
+ Allows the consuming class to set properties on the TopicDetails object. 
+ If not overridden, defaults will be used.
+ </summary>
+ <param name="details">Settings used when creating a Topic</param>
+ <returns></returns>
+</member>
+<member name="P:kCura.Agent.ServiceBusEnabledAgentBase`2.CompleteMessageEvenIfErrorIsThrownDuringHandling">
+ <summary>
+ If not overridden, agent-like behavior is seen, where a failed message is not reprocessed.
+ If set to false, messages which have an error when handled will be retried according to the bus's redelivery logic.
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:kCura.Agent.ServiceBusEnabledAgentBase`2.ThresholdToBeginCheckingForIdleState">
+ <summary>
+ Percent in the form of a number between 0 and 1, e.g. .5
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:kCura.Agent.ServiceBusEnabledAgentBase`2.ThresholdToDetermineThreadIdleInMinutes">
+ <summary>
+ If ShouldDoIdleThreadChecking is true, and the PriorityQueue Thinks work is in progress, but it has been this long since any jobs have been completed, the PriorityQueue may conclude it needs to release slots and allow new threads to begin.
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:kCura.Agent.ServiceBusEnabledAgentBase`2.ShouldDoIdleThreadChecking">
+ <summary>
+ Determines whether the PriorityQueue should spin up a thread to do the following work: If the PriorityQueue Thinks work is in progress, but it has been this long since any jobs have been completed, the PriorityQueue may conclude it needs to release slots and allow new threads to begin
+ </summary>
+ <returns></returns>
+</member>
+<member name="T:IAgentExecutionWrapper">
+ <summary>
+ Allows for injection of behavior around agent execution methods
+ </summary>
+</member>
+<member name="M:IAgentExecutionWrapper.HandleExecute(System.Action)">
+ <summary>
+ Handles the agent execution
+ </summary>
+ <param name="action">The delegate to the agents Execute method.</param>
+</member>
+<member name="M:IAgentExecutionWrapper.Reset">
+ <summary>
+ Handles notification that an agent has been Enabled, and to rest any behaviors around past execution.
+ </summary>
+</member>
+<member name="T:IOperationalSpan">
+ <summary>
+ Class to provide access to creating Operational Spans and enriching the data
+ </summary>
+</member>
+<member name="M:IOperationalSpan.AddContextInformation(System.String,System.String)">
+ <summary>
+ Adds information to logging inside the span
+ </summary>
+ <param name="key">The Name of information provided.</param>
+ <param name="value">The Value of the information.</param>
+</member>
+<member name="M:IOperationalSpan.CreateChildSpan(System.String)">
+ <summary>
+ Creates a span with the same root as this span.
+ </summary>
+ <param name="name">The name of the OperationalSpan to track</param>
+ <returns></returns>
+</member>
+<member name="T:NoOpAgentExectionWrapper">
+ <summary>
+ Pass through no op wrapper
+ </summary>
+</member>
+<member name="M:NoOpAgentExectionWrapper.HandleExecute(System.Action)">
+ <summary>
+ Calls execute.
+ </summary>
+</member>
+<member name="M:NoOpAgentExectionWrapper.Reset">
+ <summary>
+ Does nothing
+ </summary>
+</member>
+</members>
+</doc>
