@@ -8,7 +8,7 @@ namespace RelativityAgentConsole
         static void Main(string[] args)
         {
             var helper = new FakeHelper();
-            var agent = new DocumentLoggerAgent(helper);
+            var agent = new DocumentLoggerAgentLocal(helper);
 
             agent.Execute();
 

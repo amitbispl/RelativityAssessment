@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RelativityApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+98ccdb014362fc75b2fc167934b64290d371d165")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f5d15baa10d51336e15a10936c928ef334a19543")]
 [assembly: System.Reflection.AssemblyProductAttribute("RelativityApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RelativityApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
